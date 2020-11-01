@@ -55,8 +55,9 @@ export const createCheckoutSession = async (req, res) => {
     payment_method_types: ["card"],
     line_items: line_items,
     mode: "payment",
-    success_url: process.env.FRONTEND_SUCCESS_PAYMENT_PAGE,
-    cancel_url: process.env.FRONTEND_FAIL_PAYMENT_PAGE,
+    success_url:
+      "https://diogoku.github.io/beats-frontend-store/#/payment/successful",
+    cancel_url: "https://diogoku.github.io/beats-frontend-store/#/payment/fail",
   });
 
   return res.json({ id: session.id });
