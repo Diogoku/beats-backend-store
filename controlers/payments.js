@@ -14,9 +14,6 @@ import { myValidationResult } from "../validators/user.js";
 // models
 import Product from "../models/product.js";
 
-// error handler
-import { errorHandler } from "../helpers/dbErrorHandler.js";
-
 const Stripe = stripe(process.env.STRIPE_PK_TEST);
 
 export const createCheckoutSession = async (req, res) => {
