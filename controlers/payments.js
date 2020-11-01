@@ -59,7 +59,7 @@ export const createCheckoutSession = async (req, res) => {
     cancel_url: process.env.FRONTEND_FAIL_PAYMENT_PAGE,
   });
 
-  res.json({ id: session.id });
+  return res.json({ id: session.id });
 };
 
 export const successfulPayment = async (req, res) => {
