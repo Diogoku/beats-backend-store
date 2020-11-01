@@ -56,8 +56,8 @@ export const createCheckoutSession = async (req, res) => {
     line_items: line_items,
     mode: "payment",
     success_url:
-      "https://diogoku.github.io/beats-frontend-store/payment/successful",
-    cancel_url: "https://diogoku.github.io/beats-frontend-store/payment/fail",
+      "https://diogoku.github.io/beats-frontend-store/#/payment/successful",
+    cancel_url: "https://diogoku.github.io/beats-frontend-store/#/payment/fail",
     //success_url: process.env.FRONTEND_SUCCESS_PAYMENT_PAGE,
     //cancel_url: process.env.FRONTEND_FAIL_PAYMENT_PAGE,
   });
